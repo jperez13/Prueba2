@@ -5,12 +5,11 @@ using System.Web;
 
 namespace Evaluacion2WebApi.Models
 {
-    public class Delito
+    public class CondenaDelito
     {
         public int Id { get; set; }
-        public string Nombre { get; set; }
-        public int CondenaMinima { get; set; }
-        public int CondenaMaxima { get; set; }
-
+        public int CondenaId { get; set; }
+        public int DelitoId { get; set; }
+        public int AniosCondena { get; set; }
     }
 }

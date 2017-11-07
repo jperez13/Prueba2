@@ -9,7 +9,7 @@ namespace Evaluacion2WebApi.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = false;
+            AutomaticMigrationsEnabled = true;
         }
 
         protected override void Seed(Evaluacion2WebApi.Models.PresosDBContext context)
@@ -19,13 +19,13 @@ namespace Evaluacion2WebApi.Migrations
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
             //  to avoid creating duplicate seed data. E.g.
             //
-            //    context.People.AddOrUpdate(
-            //      p => p.FullName,
-            //      new Person { FullName = "Andrew Peters" },
-            //      new Person { FullName = "Brice Lambson" },
-            //      new Person { FullName = "Rowan Miller" }
-            //    );
-            //
+            context.Delitos.AddOrUpdate(
+                new Models.Delito { Id = 1 , Nombre = "Homicidio" , CondenaMinima = 5 , CondenaMaxima = 20 },
+                new Models.Delito { Id = 1, Nombre = "Femicidio", CondenaMinima = 5, CondenaMaxima = 20 },
+                new Models.Delito { Id = 1, Nombre = "Robo con Intimidacion", CondenaMinima = 1, CondenaMaxima = 12 },
+                new Models.Delito { Id = 1, Nombre = "Robo en lugar no habitado", CondenaMinima = 1, CondenaMaxima = 5 },
+                new Models.Delito { Id = 1, Nombre = "Cohecho", CondenaMinima = 5, CondenaMaxima = 8 }
+                );
         }
     }
 }

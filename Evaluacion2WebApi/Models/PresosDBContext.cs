@@ -12,6 +12,7 @@ namespace Evaluacion2WebApi.Models
         public DbSet<Delito> Delitos { get; set; }
         public DbSet<Juez> Jueces { get; set; }
         public DbSet<Preso> Presos { get; set; }
+        public DbSet<CondenaDelito> CondenaDelitos { get; set; }
 
     }
 }

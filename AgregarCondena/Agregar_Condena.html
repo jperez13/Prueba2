@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Agregar Condena</title>
+</head>
+<body>
+
+<form> 
+<table>
+	<tr>
+		<td>
+			<label>Fecha Inicio Condena</label>
+		</td>
+		<td><input type="text" name="txtFechaInicio" id="txtFechaInicio"></td>
+	</tr>
+	<tr>
+		<td><label>Fecha Registro Condena</label></td>
+		<td><input type="text" name="txtFechaCondena" id="txtFechaCondena"></td>
+	</tr>
+	<tr>
+		<td><label>Preso</label></td>
+		<td>
+			<select name="cboPreso" id="cboPreso">
+				
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td><label>Juez</label></td>
+		<td>
+			<select name="cboJuez" id="cboJuez">
+				
+			</select>
+		</td>
+	</tr>
+	<<tr>
+		<td><label>Delito</label></td>
+		<td>
+			<select name="cboDelitos" id="cboDelitos">
+				
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td><label>Años de Condena</label></td>
+		<td><input type="text" name="txtAnios" id="txtAnios"></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>
+			<input type="button" name="btnGuardar" id="btnGuardar" value="Guardar">
+		</td>
+	</tr>
+</table>
+
+</form>
+
+<h2 id="lblMensaje"></h2>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script type="text/javascript" src="js/agregar.js"></script>
+
+</body>
+</html>
